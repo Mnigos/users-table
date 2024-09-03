@@ -27,3 +27,5 @@ export interface UserCompany {
   catchPhrase: string
   bs: string
 }
+
+export type UserBasicInfo = Pick<User, 'name' | 'username' | 'email' | 'phone'>

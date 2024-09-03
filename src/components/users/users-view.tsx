@@ -1,11 +1,22 @@
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+
 import { UsersTable } from './users-table'
 
 import { useUsersQuery } from '@app/api/hooks'
+import { setUsers } from '@app/store/slices'
+import { useUsersSelector } from '@app/store/selectors'
 
 export function UsersView() {
-  const { data: users, isLoading } = useUsersQuery()
+  const { data, isLoading } = useUsersQuery()
+  const dispatch = useDispatch()
+  const users = useUsersSelector()
 
-  if (isLoading || !users) return <div>Loading...</div>
+  useEffect(() => {
+    if (data) dispatch(setUsers(data))
+  }, [data, dispatch])
+
+  if (isLoading || !data) return <div>Loading...</div>
 
   return (
     <section className="flex flex-col gap-4">
