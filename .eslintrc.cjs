@@ -1,11 +1,6 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     projectService: {
@@ -28,7 +23,7 @@ module.exports = {
     'import/resolver': {
       node: {
         project: './tsconfig.json',
-        paths: ['@app/', '@tests/'],
+        paths: ['@app/'],
         extensions: ['.js', '.ts', '.tsx', '.jsx'],
       },
       typescript: {
@@ -36,10 +31,7 @@ module.exports = {
         alwaysTryTypes: true,
       },
       alias: {
-        map: [
-          ['@app', './app'],
-          ['@tests', './tests'],
-        ],
+        map: [['@app', './src']],
         extensions: ['.ts', '.js', '.tsx', '.jsx'],
       },
     },
@@ -59,11 +51,13 @@ module.exports = {
     'prettier',
   ],
   extends: [
+    'eslint:recommended',
     'plugin:@typescript-eslint/strict-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
     'plugin:eslint-comments/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
