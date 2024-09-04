@@ -5,15 +5,919 @@ exports[`UsersView > should match snapshot as loading 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        Loading...
-      </div>
+      <section
+        class="flex flex-col gap-4"
+      >
+        <header>
+          <h1
+            class="text-4xl"
+          >
+            Users
+          </h1>
+        </header>
+        <main>
+          <div>
+            <div
+              class="relative w-full overflow-auto"
+            >
+              <table
+                class="w-full caption-bottom text-sm"
+              >
+                <thead
+                  class="border-neutral-600 [&_tr]:border-b"
+                >
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <th
+                      class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[2px]"
+                      >
+                        <button
+                          class="flex items-center gap-2"
+                        >
+                          Name
+                          <div
+                            class="w-[16px]"
+                          />
+                        </button>
+                        <div
+                          class="p-1"
+                        >
+                          <input
+                            class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                            disabled=""
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[2px]"
+                      >
+                        <button
+                          class="flex items-center gap-2"
+                        >
+                          Username
+                          <div
+                            class="w-[16px]"
+                          />
+                        </button>
+                        <div
+                          class="p-1"
+                        >
+                          <input
+                            class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                            disabled=""
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[2px]"
+                      >
+                        <button
+                          class="flex items-center gap-2"
+                        >
+                          Email
+                          <div
+                            class="w-[16px]"
+                          />
+                        </button>
+                        <div
+                          class="p-1"
+                        >
+                          <input
+                            class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                            disabled=""
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[2px]"
+                      >
+                        <button
+                          class="flex items-center gap-2"
+                        >
+                          Phone
+                          <div
+                            class="w-[16px]"
+                          />
+                        </button>
+                        <div
+                          class="p-1"
+                        >
+                          <input
+                            class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                            disabled=""
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="border-neutral-600 [&_tr:last-child]:border-0"
+                >
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                    >
+                      <div
+                        class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </section>
     </div>
   </body>,
   "container": <div>
-    <div>
-      Loading...
-    </div>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <header>
+        <h1
+          class="text-4xl"
+        >
+          Users
+        </h1>
+      </header>
+      <main>
+        <div>
+          <div
+            class="relative w-full overflow-auto"
+          >
+            <table
+              class="w-full caption-bottom text-sm"
+            >
+              <thead
+                class="border-neutral-600 [&_tr]:border-b"
+              >
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <th
+                    class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    <div
+                      class="flex items-center gap-[2px]"
+                    >
+                      <button
+                        class="flex items-center gap-2"
+                      >
+                        Name
+                        <div
+                          class="w-[16px]"
+                        />
+                      </button>
+                      <div
+                        class="p-1"
+                      >
+                        <input
+                          class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                          disabled=""
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th
+                    class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    <div
+                      class="flex items-center gap-[2px]"
+                    >
+                      <button
+                        class="flex items-center gap-2"
+                      >
+                        Username
+                        <div
+                          class="w-[16px]"
+                        />
+                      </button>
+                      <div
+                        class="p-1"
+                      >
+                        <input
+                          class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                          disabled=""
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th
+                    class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    <div
+                      class="flex items-center gap-[2px]"
+                    >
+                      <button
+                        class="flex items-center gap-2"
+                      >
+                        Email
+                        <div
+                          class="w-[16px]"
+                        />
+                      </button>
+                      <div
+                        class="p-1"
+                      >
+                        <input
+                          class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                          disabled=""
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th
+                    class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    <div
+                      class="flex items-center gap-[2px]"
+                    >
+                      <button
+                        class="flex items-center gap-2"
+                      >
+                        Phone
+                        <div
+                          class="w-[16px]"
+                        />
+                      </button>
+                      <div
+                        class="p-1"
+                      >
+                        <input
+                          class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                          disabled=""
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="border-neutral-600 [&_tr:last-child]:border-0"
+              >
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  >
+                    <div
+                      class="animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10 h-5 w-24"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </section>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

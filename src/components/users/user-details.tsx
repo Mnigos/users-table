@@ -18,7 +18,7 @@ function UserDetails({ id, name, username }: UserDetails.Props) {
   const [firstName, lastName] = name.split(' ') as [string, string]
 
   return (
-    <DialogContent>
+    <DialogContent className="my-2 max-h-screen overflow-y-scroll sm:overflow-y-hidden lg:max-w-screen-lg">
       <DialogHeader className="flex flex-row items-center gap-2">
         <Avatar className="flex items-center justify-center bg-blue-700">
           <AvatarFallback>
@@ -28,7 +28,7 @@ function UserDetails({ id, name, username }: UserDetails.Props) {
 
         <div>
           <DialogTitle>{name}</DialogTitle>
-          <DialogDescription className="text-neutral-500">
+          <DialogDescription className="text-start text-neutral-500">
             @{username}
           </DialogDescription>
         </div>
