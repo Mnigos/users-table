@@ -56,6 +56,8 @@ jobs:
 
       - name: Run unit tests 🧪
         run: bun run test:coverage
+        env:
+          VITE_JSON_PLACEHOLDER_API_URL: https://api.example.com
 
       - name: Collect coverage
         uses: codecov/codecov-action@v4
