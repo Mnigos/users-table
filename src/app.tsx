@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 
 import { UsersView } from './components/users'
 import { rootStore } from './store'
+import { Footer } from './components/footer'
 
 const queryClient = new QueryClient()
 
@@ -11,9 +12,13 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Provider store={rootStore}>
-        <main className="dark min-h-screen w-screen bg-neutral-900 p-16 text-neutral-50">
-          <UsersView />
-        </main>
+        <div className="max-w-screen dark flex min-h-screen flex-col justify-between bg-neutral-900 text-neutral-50">
+          <main className="p-2 md:p-4 lg:p-8 xl:p-16">
+            <UsersView />
+          </main>
+
+          <Footer />
+        </div>
       </Provider>
 
       <ReactQueryDevtools />
