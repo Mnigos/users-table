@@ -8,5 +8,12 @@
     "strict": true,
     "strictNullChecks": true
   },
-  "include": ["vite.config.ts", "commitlint.config.ts"]
+  "include": [
+    "postcss.config.mjs",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "commitlint.config.ts",
+    "tailwind.config.ts",
+    "tests"
+  ]
 }

@@ -78,6 +78,8 @@ module.exports = {
       files: ['tailwind.config.ts'],
       rules: {
         'sonarjs/no-duplicate-string': 'off',
+        'unicorn/prefer-module': 'off',
+        '@typescript-eslint/no-require-imports': 'off',
       },
     },
     {
