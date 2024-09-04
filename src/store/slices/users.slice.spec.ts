@@ -1,4 +1,3 @@
-import type { MockProxy } from 'vitest-mock-extended'
 import { mock } from 'vitest-mock-extended'
 
 import {
@@ -9,6 +8,7 @@ import {
 } from './users.slice'
 
 import type { User } from '@app/api/types'
+import { johnUserMock, usersMock } from '@tests/mocks'
 
 describe('usersSlice', () => {
   describe('setUsers', () => {
@@ -23,25 +23,6 @@ describe('usersSlice', () => {
   })
 
   describe('filterUsers', () => {
-    const johnUserMock = mock<User>({
-      name: 'John',
-      username: 'john',
-      email: 'john@example.com',
-      phone: '+1234567890',
-    })
-    const oliverUserMock = mock<User>({
-      name: 'Oliver',
-      username: 'oliver',
-      email: 'oliver@example.com',
-      phone: '+9876543210',
-    })
-
-    let usersMock: MockProxy<User>[]
-
-    beforeEach(() => {
-      usersMock = [johnUserMock, oliverUserMock]
-    })
-
     test('should filter users with name', () => {
       const activeFilter = {
         name: 'J',
