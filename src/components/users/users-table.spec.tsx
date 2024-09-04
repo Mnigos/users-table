@@ -1,36 +1,14 @@
 import { render, screen } from '@testing-library/react'
 import { userEvent, type UserEvent } from '@testing-library/user-event'
-import { mock } from 'vitest-mock-extended'
 import { useDispatch } from 'react-redux'
 
 import { UsersTable } from './users-table'
 
-import type { User } from '@app/api/types'
+import { usersMock } from '@tests/mocks'
 
 vi.mock('react-redux')
 
 describe('UsersTable', () => {
-  const usersMock = [
-    mock<User>({
-      name: 'John',
-      username: 'john',
-      email: 'john@example.com',
-      phone: '+1234567890',
-    }),
-    mock<User>({
-      name: 'Oliver',
-      username: 'oliver',
-      email: 'oliver@example.com',
-      phone: '+9876543210',
-    }),
-    mock<User>({
-      name: 'Max',
-      username: 'max',
-      email: 'max@example.com',
-      phone: '+09876543210',
-    }),
-  ]
-
   let user: UserEvent
 
   beforeEach(() => {
