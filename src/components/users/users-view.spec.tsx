@@ -11,9 +11,15 @@ import { UsersView } from './users-view'
 import { useUsersQuery } from '@app/api/hooks'
 import type { User } from '@app/api/types'
 import { rootStore } from '@app/store'
-import { usersMock } from '@tests/mocks'
+import {
+  johnUserMock,
+  maxUserMock,
+  oliverUserMock,
+  usersMock,
+} from '@tests/mocks'
 
 vi.mock('@app/api/hooks')
+vi.mock('./user-details')
 
 function StoreWrapper({
   children,
@@ -73,9 +79,9 @@ describe('UsersView', () => {
 
       await user.type(input, 'John')
 
-      expect(screen.getByText('John')).toBeInTheDocument()
-      expect(screen.queryByText('Oliver')).not.toBeInTheDocument()
-      expect(screen.queryByText('Max')).not.toBeInTheDocument()
+      expect(screen.getByText(johnUserMock.name)).toBeInTheDocument()
+      expect(screen.queryByText(oliverUserMock.name)).not.toBeInTheDocument()
+      expect(screen.queryByText(maxUserMock.name)).not.toBeInTheDocument()
     })
 
     test('should filter users by username', async () => {
@@ -87,9 +93,11 @@ describe('UsersView', () => {
 
       await user.type(input, 'john')
 
-      expect(screen.getByText('John')).toBeInTheDocument()
-      expect(screen.queryByText('Oliver')).not.toBeInTheDocument()
-      expect(screen.queryByText('Max')).not.toBeInTheDocument()
+      expect(screen.getByText(johnUserMock.username)).toBeInTheDocument()
+      expect(
+        screen.queryByText(oliverUserMock.username)
+      ).not.toBeInTheDocument()
+      expect(screen.queryByText(maxUserMock.username)).not.toBeInTheDocument()
     })
 
     test('should filter users by email', async () => {
@@ -101,9 +109,9 @@ describe('UsersView', () => {
 
       await user.type(input, 'john@example.com')
 
-      expect(screen.getByText('John')).toBeInTheDocument()
-      expect(screen.queryByText('Oliver')).not.toBeInTheDocument()
-      expect(screen.queryByText('Max')).not.toBeInTheDocument()
+      expect(screen.getByText(johnUserMock.email)).toBeInTheDocument()
+      expect(screen.queryByText(oliverUserMock.email)).not.toBeInTheDocument()
+      expect(screen.queryByText(maxUserMock.email)).not.toBeInTheDocument()
     })
 
     test('should filter users by phone', async () => {
@@ -115,9 +123,9 @@ describe('UsersView', () => {
 
       await user.type(input, '+1234567890')
 
-      expect(screen.getByText('John')).toBeInTheDocument()
-      expect(screen.queryByText('Oliver')).not.toBeInTheDocument()
-      expect(screen.queryByText('Max')).not.toBeInTheDocument()
+      expect(screen.getByText(johnUserMock.phone)).toBeInTheDocument()
+      expect(screen.queryByText(oliverUserMock.phone)).not.toBeInTheDocument()
+      expect(screen.queryByText(maxUserMock.phone)).not.toBeInTheDocument()
     })
   })
 })

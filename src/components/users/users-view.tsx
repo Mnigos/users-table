@@ -5,12 +5,12 @@ import { UsersTable } from './users-table'
 
 import { useUsersQuery } from '@app/api/hooks'
 import { setUsers } from '@app/store/slices'
-import { useUsersSelector } from '@app/store/selectors'
+import { useFilteredUsersSelector } from '@app/store/selectors'
 
 export function UsersView() {
   const { data, isLoading } = useUsersQuery()
   const dispatch = useDispatch()
-  const users = useUsersSelector()
+  const filteredUsers = useFilteredUsersSelector()
 
   useEffect(() => {
     if (data) dispatch(setUsers(data))
@@ -25,7 +25,7 @@ export function UsersView() {
       </header>
 
       <main>
-        <UsersTable users={users} />
+        <UsersTable filteredUsers={filteredUsers} />
       </main>
     </section>
   )

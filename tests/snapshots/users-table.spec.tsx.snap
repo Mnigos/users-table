@@ -123,22 +123,42 @@ exports[`UsersTable > should match snapshot 1`] = `
                 class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
               >
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:r0:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
-                  John
+                  John Doe
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:r3:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   john
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:r6:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   john@example.com
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:r9:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   +1234567890
                 </td>
@@ -147,22 +167,42 @@ exports[`UsersTable > should match snapshot 1`] = `
                 class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
               >
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:rc:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
-                  Oliver
+                  Oliver Smith
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:rf:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   oliver
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:ri:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   oliver@example.com
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:rl:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   +9876543210
                 </td>
@@ -171,22 +211,42 @@ exports[`UsersTable > should match snapshot 1`] = `
                 class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
               >
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:ro:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
-                  Max
+                  Max Mustermann
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:rr:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   max
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:ru:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   max@example.com
                 </td>
                 <td
-                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  aria-controls="radix-:r11:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                  data-state="closed"
+                  type="button"
                 >
                   +09876543210
                 </td>
@@ -316,22 +376,42 @@ exports[`UsersTable > should match snapshot 1`] = `
               class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
             >
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:r0:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
-                John
+                John Doe
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:r3:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 john
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:r6:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 john@example.com
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:r9:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 +1234567890
               </td>
@@ -340,22 +420,42 @@ exports[`UsersTable > should match snapshot 1`] = `
               class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
             >
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:rc:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
-                Oliver
+                Oliver Smith
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:rf:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 oliver
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:ri:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 oliver@example.com
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:rl:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 +9876543210
               </td>
@@ -364,22 +464,42 @@ exports[`UsersTable > should match snapshot 1`] = `
               class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
             >
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:ro:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
-                Max
+                Max Mustermann
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:rr:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 max
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:ru:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 max@example.com
               </td>
               <td
-                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                aria-controls="radix-:r11:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] cursor-pointer"
+                data-state="closed"
+                type="button"
               >
                 +09876543210
               </td>

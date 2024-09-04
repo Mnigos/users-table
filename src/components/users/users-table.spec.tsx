@@ -5,18 +5,23 @@ import { useDispatch } from 'react-redux'
 import { UsersTable } from './users-table'
 
 import { usersMock } from '@tests/mocks'
+import { useUsersSelector } from '@app/store/selectors'
 
 vi.mock('react-redux')
+vi.mock('./user-details')
+vi.mock('@app/store/selectors')
 
 describe('UsersTable', () => {
   let user: UserEvent
 
   beforeEach(() => {
     user = userEvent.setup()
+
+    vi.mocked(useUsersSelector).mockReturnValue(usersMock)
   })
 
   test('should match snapshot', () => {
-    const view = render(<UsersTable users={usersMock} />)
+    const view = render(<UsersTable filteredUsers={usersMock} />)
 
     expect(view).toMatchSnapshot()
   })
@@ -29,7 +34,7 @@ describe('UsersTable', () => {
     })
 
     test('should filter users by name', async () => {
-      render(<UsersTable users={usersMock} />)
+      render(<UsersTable filteredUsers={usersMock} />)
 
       const input = screen.getAllByRole('textbox')[0]!
 
@@ -46,7 +51,7 @@ describe('UsersTable', () => {
     })
 
     test('should filter users by username', async () => {
-      render(<UsersTable users={usersMock} />)
+      render(<UsersTable filteredUsers={usersMock} />)
 
       const input = screen.getAllByRole('textbox')[1]!
 
@@ -63,7 +68,7 @@ describe('UsersTable', () => {
     })
 
     test('should filter users by email', async () => {
-      render(<UsersTable users={usersMock} />)
+      render(<UsersTable filteredUsers={usersMock} />)
 
       const input = screen.getAllByRole('textbox')[2]!
 
@@ -80,7 +85,7 @@ describe('UsersTable', () => {
     })
 
     test('should filter users by phone', async () => {
-      render(<UsersTable users={usersMock} />)
+      render(<UsersTable filteredUsers={usersMock} />)
 
       const input = screen.getAllByRole('textbox')[3]!
 

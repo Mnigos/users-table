@@ -9,6 +9,7 @@ import { useMemo } from 'react'
 import { LuArrowDownSquare, LuArrowUpSquare } from 'react-icons/lu'
 import { useDispatch } from 'react-redux'
 
+import { Dialog, DialogTrigger } from '../ui/dialog'
 import { Input } from '../ui/input'
 import {
   Table,
@@ -19,17 +20,20 @@ import {
   TableRow,
 } from '../ui/table'
 
-import type { UserBasicInfo } from '@app/api/types'
+import { UserDetails } from './user-details'
+
+import type { User, UserBasicInfo } from '@app/api/types'
+import { useUsersSelector } from '@app/store/selectors'
 import { filterUsers } from '@app/store/slices'
 import { cn } from '@app/utils'
 
 namespace UsersTable {
   export type Props = Readonly<{
-    users: UserBasicInfo[]
+    filteredUsers: UserBasicInfo[]
   }>
 }
 
-function UsersTable({ users }: UsersTable.Props) {
+function UsersTable({ filteredUsers }: UsersTable.Props) {
   const columns = useMemo<ColumnDef<UserBasicInfo>[]>(
     () => [
       {
@@ -53,12 +57,13 @@ function UsersTable({ users }: UsersTable.Props) {
   )
 
   const table = useReactTable({
-    data: users,
+    data: filteredUsers,
     columns,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
   })
 
+  const users = useUsersSelector()
   const dispatch = useDispatch()
 
   function handleFilterChange(column: string, value: string) {
@@ -121,10 +126,20 @@ function UsersTable({ users }: UsersTable.Props) {
         <TableBody>
           {table.getRowModel().rows.map(({ id, getVisibleCells }) => (
             <TableRow key={id}>
-              {getVisibleCells().map(({ id, column, getContext }) => (
-                <TableCell key={id}>
-                  {flexRender(column.columnDef.cell, getContext())}
-                </TableCell>
+              {getVisibleCells().map(({ id, column, getContext, getValue }) => (
+                <Dialog key={id}>
+                  <DialogTrigger asChild>
+                    <TableCell className="cursor-pointer">
+                      {flexRender(column.columnDef.cell, getContext())}
+                    </TableCell>
+                  </DialogTrigger>
+
+                  <UserDetails
+                    {...users.find(
+                      user => user[column.id as keyof User] === getValue()
+                    )!}
+                  />
+                </Dialog>
               ))}
             </TableRow>
           ))}
