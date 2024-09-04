@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { UsersTable } from './users-table'
+import { UsersTableSkeleton } from './users-table.skeleton'
 
 import { useUsersQuery } from '@app/api/hooks'
 import { setUsers } from '@app/store/slices'
@@ -16,8 +17,6 @@ export function UsersView() {
     if (data) dispatch(setUsers(data))
   }, [data, dispatch])
 
-  if (isLoading || !data) return <div>Loading...</div>
-
   return (
     <section className="flex flex-col gap-4">
       <header>
@@ -25,7 +24,11 @@ export function UsersView() {
       </header>
 
       <main>
-        <UsersTable filteredUsers={filteredUsers} />
+        {!isLoading && data ? (
+          <UsersTable filteredUsers={filteredUsers} />
+        ) : (
+          <UsersTableSkeleton />
+        )}
       </main>
     </section>
   )
