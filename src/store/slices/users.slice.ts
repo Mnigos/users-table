@@ -26,13 +26,15 @@ function filterUser(value: string, filter: string) {
   return lowerCasedValue.includes(lowerCasedFilter)
 }
 
+export const usersInitialState: UsersState = {
+  users: [],
+  filteredUsers: [],
+  activeFilter: {},
+}
+
 export const usersSlice = createSlice({
   name: 'users',
-  initialState: {
-    users: [],
-    filteredUsers: [],
-    activeFilter: {},
-  } as UsersState,
+  initialState: usersInitialState,
   reducers: {
     setUsers: (state, action: SetUsersAction) => {
       return {
