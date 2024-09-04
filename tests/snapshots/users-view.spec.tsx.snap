@@ -1,0 +1,539 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UsersView > should match snapshot as loading 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        Loading...
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      Loading...
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`UsersView > should match snapshot with data 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="flex flex-col gap-4"
+      >
+        <header>
+          <h1
+            class="text-4xl"
+          >
+            Users
+          </h1>
+        </header>
+        <main>
+          <div>
+            <div
+              class="relative w-full overflow-auto"
+            >
+              <table
+                class="w-full caption-bottom text-sm"
+              >
+                <thead
+                  class="border-neutral-600 [&_tr]:border-b"
+                >
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <th
+                      class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[2px]"
+                      >
+                        <button
+                          class="cursor-pointer select-none flex items-center gap-2"
+                        >
+                          Name
+                          <div
+                            class="w-[16px]"
+                          />
+                        </button>
+                        <div
+                          class="p-1"
+                        >
+                          <input
+                            class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[2px]"
+                      >
+                        <button
+                          class="cursor-pointer select-none flex items-center gap-2"
+                        >
+                          Username
+                          <div
+                            class="w-[16px]"
+                          />
+                        </button>
+                        <div
+                          class="p-1"
+                        >
+                          <input
+                            class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[2px]"
+                      >
+                        <button
+                          class="cursor-pointer select-none flex items-center gap-2"
+                        >
+                          Email
+                          <div
+                            class="w-[16px]"
+                          />
+                        </button>
+                        <div
+                          class="p-1"
+                        >
+                          <input
+                            class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      <div
+                        class="flex items-center gap-[2px]"
+                      >
+                        <button
+                          class="cursor-pointer select-none flex items-center gap-2"
+                        >
+                          Phone
+                          <div
+                            class="w-[16px]"
+                          />
+                        </button>
+                        <div
+                          class="p-1"
+                        >
+                          <input
+                            class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="border-neutral-600 [&_tr:last-child]:border-0"
+                >
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      John
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      john
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      john@example.com
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      +1234567890
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      Oliver
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      oliver
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      oliver@example.com
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      +9876543210
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                  >
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      Max
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      max
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      max@example.com
+                    </td>
+                    <td
+                      class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                    >
+                      +09876543210
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="flex flex-col gap-4"
+    >
+      <header>
+        <h1
+          class="text-4xl"
+        >
+          Users
+        </h1>
+      </header>
+      <main>
+        <div>
+          <div
+            class="relative w-full overflow-auto"
+          >
+            <table
+              class="w-full caption-bottom text-sm"
+            >
+              <thead
+                class="border-neutral-600 [&_tr]:border-b"
+              >
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <th
+                    class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    <div
+                      class="flex items-center gap-[2px]"
+                    >
+                      <button
+                        class="cursor-pointer select-none flex items-center gap-2"
+                      >
+                        Name
+                        <div
+                          class="w-[16px]"
+                        />
+                      </button>
+                      <div
+                        class="p-1"
+                      >
+                        <input
+                          class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th
+                    class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    <div
+                      class="flex items-center gap-[2px]"
+                    >
+                      <button
+                        class="cursor-pointer select-none flex items-center gap-2"
+                      >
+                        Username
+                        <div
+                          class="w-[16px]"
+                        />
+                      </button>
+                      <div
+                        class="p-1"
+                      >
+                        <input
+                          class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th
+                    class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    <div
+                      class="flex items-center gap-[2px]"
+                    >
+                      <button
+                        class="cursor-pointer select-none flex items-center gap-2"
+                      >
+                        Email
+                        <div
+                          class="w-[16px]"
+                        />
+                      </button>
+                      <div
+                        class="p-1"
+                      >
+                        <input
+                          class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th
+                    class="h-10 px-2 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    <div
+                      class="flex items-center gap-[2px]"
+                    >
+                      <button
+                        class="cursor-pointer select-none flex items-center gap-2"
+                      >
+                        Phone
+                        <div
+                          class="w-[16px]"
+                        />
+                      </button>
+                      <div
+                        class="p-1"
+                      >
+                        <input
+                          class="flex h-9 rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 w-full"
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="border-neutral-600 [&_tr:last-child]:border-0"
+              >
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    John
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    john
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    john@example.com
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    +1234567890
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    Oliver
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    oliver
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    oliver@example.com
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    +9876543210
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-neutral-600 transition-colors hover:bg-neutral-100/50 data-[state=selected]:bg-neutral-100 dark:hover:bg-neutral-800/50 dark:data-[state=selected]:bg-neutral-800"
+                >
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    Max
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    max
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    max@example.com
+                  </td>
+                  <td
+                    class="p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]"
+                  >
+                    +09876543210
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
