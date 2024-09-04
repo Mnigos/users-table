@@ -7,7 +7,7 @@ import { getUsers } from './get-users'
 import { env } from '@app/env'
 
 describe('getUsers', () => {
-  it('should return users', async () => {
+  test('should return users', async () => {
     const usersMock = mock<User[]>()
 
     const fetchMock = vi.fn().mockResolvedValue({
