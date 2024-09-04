@@ -19,7 +19,14 @@ export function UsersView() {
 
   return (
     <section className="flex flex-col gap-4">
-      <header>
+      <header className="flex items-center gap-2">
+        <img
+          src="./users-table-logo.png"
+          alt="Users Table logo"
+          width="32"
+          height="32"
+        />
+
         <h1 className="text-4xl">Users</h1>
       </header>
 
