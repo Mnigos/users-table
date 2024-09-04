@@ -31,19 +31,16 @@ module.exports = {
         alwaysTryTypes: true,
       },
       alias: {
-        map: [['@app', './src']],
+        map: [
+          ['@app', './app'],
+          ['@tests', './tests'],
+        ],
         extensions: ['.ts', '.js', '.tsx', '.jsx'],
       },
     },
     'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|html)$'],
   },
-  ignorePatterns: [
-    'dist',
-    '.eslintrc.cjs',
-    'tailwind.config.ts',
-    'postcss.config.cjs',
-    'README.md',
-  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'README.md'],
   plugins: [
     '@typescript-eslint',
     'eslint-plugin-import-helpers',
@@ -51,22 +48,32 @@ module.exports = {
     'prettier',
   ],
   extends: [
-    'eslint:recommended',
     'plugin:@typescript-eslint/strict-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:@tanstack/eslint-plugin-query/recommended',
-    'plugin:eslint-comments/recommended',
+    'plugin:vitest/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:sonarjs/recommended-legacy',
     'plugin:unicorn/recommended',
     'prettier',
+    'plugin:eslint-comments/recommended',
+    'eslint:recommended',
   ],
   overrides: [
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react', 'plugin:vitest/recommended'],
+      rules: {
+        'sonarjs/no-duplicate-string': 'off',
+        '@typescript-eslint/unbound-method': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+      },
+    },
     {
       files: ['tailwind.config.ts'],
       rules: {
