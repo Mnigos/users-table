@@ -103,6 +103,7 @@ module.exports = {
   ],
   rules: {
     'no-undef': 'off',
+    'no-redeclare': 'off',
     'prefer-const': 'warn',
     'prettier/prettier': 'warn',
     '@typescript-eslint/no-unused-vars': [

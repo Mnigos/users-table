@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest",
-    "text:coverage": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage",
     "prepare": "husky",
     "commit": "cz"
   },

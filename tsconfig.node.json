@@ -13,7 +13,6 @@
     "vite.config.ts",
     "vitest.config.ts",
     "commitlint.config.ts",
-    "tailwind.config.ts",
-    "tests"
+    "tailwind.config.ts"
   ]
 }
